@@ -15,35 +15,34 @@ os.makedirs(output_folder, exist_ok=True)
 
 
 
-
 sam = sam_model_registry["vit_h"](checkpoint="checkpoint/sam_vit_h_4b8939.pth").to('cuda')
 
 
 mask_generator = SamAutomaticMaskGenerator(sam)
 predictor = SamPredictor(sam)
 
-# Read img 
 image = cv2.imread(input_image_path)
 image = cv2.cvtColor(image, cv2.COLOR_BGR2RGB)
 predictor.set_image(image)
 
-
-
-
-
-input_point = np.array([[586, 716]])
-input_label = np.array([1])
-
+input_point = np.array([[601, 503], [775, 501]])
+input_label = np.array([1, 1])
 masks, scores, logits = predictor.predict(
  point_coords=input_point,
  point_labels=input_label,
  multimask_output=True,
 )
 
+mask0 = masks[0]
+mask0 = (mask0 * 255).astype(np.uint8)
+cv2.imwrite(os.path.join(output_folder, f'{img_name}-mask0.png'), mask0)
 
+mask1 = masks[1]
+mask1 = (mask1 * 255).astype(np.uint8)
+cv2.imwrite(os.path.join(output_folder, f'{img_name}-mask1.png'), mask1)
 
+mask2 = masks[2]
+mask2 = (mask2 * 255).astype(np.uint8)
+cv2.imwrite(os.path.join(output_folder, f'{img_name}-mask2.png'), mask2)
 
-output_mask = masks[0]
-output_mask = (output_mask * 255).astype(np.uint8)
-cv2.imwrite(os.path.join(output_folder, f'{img_name}-output-mask.jpg'), output_mask)
-
+print("code runs successfully")

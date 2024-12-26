@@ -1,10 +1,10 @@
-# Project Title
+# SAM
 
 ## Setup Instructions
 
 1. Clone the repository:
     ```sh
-    git clone <your-repo-url>
+    git clone https://github.com/m15kh/SAM.git
     ```
 
 2. Navigate to the `sam-v1` directory:

@@ -1,5 +1,6 @@
 {
-    "input_image_path": "img/tst1.png",
-    "output_folder": "./output"
+    "input_image_path": "img/image/tst2.png",
+    "output_folder": "img/output"
+    
 
 }
