@@ -1,0 +1,10 @@
+
+{
+    "input_image_path": "tst3.png",
+    "output_folder": "img/output",
+    "checkpoint" : "checkpoint/sam_vit_h_4b8939.pth",
+    "point" :  [971, 1116]
+}
+
+
+

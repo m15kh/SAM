@@ -1,6 +1,5 @@
 {
     "input_image_path": "img/image/tst2.png",
-    "output_folder": "img/output"
-    
-
+    "output_folder": "img/output",
+    "checkpoint" : "checkpoint/sam_vit_h_4b8939.pth"
 }
