@@ -1,0 +1,14 @@
+{
+"dev-robust-sam": [
+
+
+        {
+            "image_camera_path": "/home/ubuntu/m15kh/3d-point/point_cloud_completion/point_cloud_completion/src/data/10.jpg",
+            "checkpoint" : "/home/ubuntu/m15kh/3d-point/point_cloud_completion/point_cloud_completion/src/checkpoints/robustsam_checkpoint_l.pth",
+            "output_path": "/home/ubuntu/m15kh/3d-point/point_cloud_completion/point_cloud_completion/src/comparation/output/"
+      
+
+        }
+    ]
+
+}
