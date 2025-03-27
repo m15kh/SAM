@@ -1,4 +1,4 @@
-# SAM Repository
+# SAM Repository 
 
 This repository contains implementations for SAM (Segment Anything Model) projects. It includes two main projects: `fast-SAM` and `sam-v1`. Each project has its own setup instructions and usage guidelines.
 
