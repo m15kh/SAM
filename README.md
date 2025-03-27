@@ -7,7 +7,7 @@ This repository contains implementations for SAM (Segment Anything Model) projec
 ### fast-SAM
 The `fast-SAM` project is designed for fast and efficient segmentation tasks. It leverages the FastSAM model to perform segmentation on input images.
 
-### sam-v1
+### sam-v1 
 The `sam-v1` project uses the SAM model for segmentation tasks. It includes detailed setup instructions and usage guidelines.
 
 ## Setup and Usage
