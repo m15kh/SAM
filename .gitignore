@@ -4,3 +4,7 @@
 segment-anything
 FastSAM
 *.pt
+*.mp4
+*.avi
+*.json
+__pycache__
